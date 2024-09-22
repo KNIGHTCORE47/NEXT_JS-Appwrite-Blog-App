@@ -1,15 +1,14 @@
+"use client"
 
+import Categories from '@/components/custom/Categories'
+import Blogs from '@/components/custom/Blogs'
 import React from 'react'
-import Render from '@/utils/Render'
-
-import CategoryContextProvider from '@/context/CategoryContextProvider'
-
 
 export default function Home() {
-
     return (
-        <CategoryContextProvider>
-            <Render />
-        </CategoryContextProvider>
+        <div>
+            <Categories />
+            <Blogs />
+        </div>
     )
 }
