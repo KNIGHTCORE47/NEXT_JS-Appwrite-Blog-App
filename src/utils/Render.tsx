@@ -17,18 +17,18 @@ async function fetchBlogs() {
 
 
 export default async function Render() {
-    const categories = await fetchCategories()
-    const blogs = await fetchBlogs()
+    const categories: any = await fetchCategories()
+    const blogs: any = await fetchBlogs()
 
     console.log(categories);
     console.log(blogs);
 
 
-    if (categories && 'documents' in categories) {
+    if (categories && 'documents' in categories && 'documents' in blogs) {
         return (
             <div>
                 <Categories categories={categories.documents} />
-                <Blogs blogs={blogs?.documents} />
+                <Blogs blogs={blogs.documents} />
             </div>
         )
     } else {
