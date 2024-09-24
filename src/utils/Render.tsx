@@ -28,7 +28,7 @@ export default async function Render() {
         return (
             <div>
                 <Categories categories={categories.documents} />
-                <Blogs />
+                <Blogs blogs={blogs?.documents} />
             </div>
         )
     } else {
