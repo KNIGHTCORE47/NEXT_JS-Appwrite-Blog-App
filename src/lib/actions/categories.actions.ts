@@ -11,7 +11,7 @@ export default async function getCategories() {
             env.appwrite.databaseId,
             env.appwrite.categoriesCollectionId
         );
-        console.log("Here we will get all categories data", categories);
+        // console.log("Here we will get all categories data", categories);
 
 
         if (!categories) {

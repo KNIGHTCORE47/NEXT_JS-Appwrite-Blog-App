@@ -13,7 +13,7 @@ async function getSingleBlog(id: string) {
             id
         )
 
-        console.log("Here we will get all blogs data", blog);
+        // console.log("Here we will get all blogs data", blog);
 
 
         if (!blog) {
@@ -38,7 +38,7 @@ async function getAllBlogs() {
             env.appwrite.databaseId,
             env.appwrite.blogsCollectionId
         );
-        console.log("Here we will get all blogs data", blogs);
+        // console.log("Here we will get all blogs data", blogs);
 
 
         if (!blogs) {
